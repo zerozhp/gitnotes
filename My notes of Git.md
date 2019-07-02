@@ -97,6 +97,12 @@ git push -u origin master
 
 由于远程库是空的，我们第一次推送`master`分支时，加上了`-u`参数，Git不但会把本地的`master`分支内容推送的远程新的`master`分支，还会把本地的`master`分支和远程的`master`分支关联起来，在以后的推送或者拉取时就可以简化命令。
 
+#### 日常推送
+
+```
+git push origin master
+```
+
 #### SSH警告
 
 当你第一次使用Git的`clone`或者`push`命令连接GitHub时，会得到一个警告
