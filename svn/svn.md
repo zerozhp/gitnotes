@@ -234,6 +234,7 @@ cp post-commit.tmpl post-commit
 
 ```bash
 #!/bin/sh
+
 REPOS="$1"
 REV="$2"
 
@@ -244,12 +245,13 @@ SVN_PATH=/usr/bin/svn
 SVN_USER=webupdate
 SVN_PASS=webupdate123
 WEB_USER=www
+WEB_ROOT=root
 WEB_PATH=/www/wwwroot/www.160678.com
 LOG_PATH=/tmp/svn.log
 echo `date "+%Y-%m-%d %H:%M:%S"` >> $LOG_PATH
 echo `whoami`,$REPOS,$REV >> $LOG_PATH
 $SVN_PATH update $WEB_PATH --username $SVN_USER --password $SVN_PASS --no-auth-cache >> $LOG_PATH
-chown $WEB_USER.$WEB_USER -R $WEB_PATH
+chown $WEB_USER.$WEB_ROOT -R $WEB_PATH
 ```
 
 > 说明：
