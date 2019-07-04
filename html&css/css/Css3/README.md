@@ -91,12 +91,12 @@ p:after {
 
 # 背景和边框
 
-| 属性             | 值                               | 描述                           |
-| ---------------- | -------------------------------- | ------------------------------ |
-| background-image | url(URL),url(URL)                | 使用多个背景图像               |
-| background-size  | 像素值\|%                        | 设置背景图片的尺寸             |
-| border-radius    | 像素值\|%                        | 设置盒子的圆角边框（顺时针）   |
-| box-shadow       | x位置 y位置  模糊 尺寸 颜色 内外 | 设置盒子的阴影，可使用多个阴影 |
+| 属性             | 值                               | 描述                         |
+| ---------------- | -------------------------------- | ---------------------------- |
+| background-image | url(URL),url(URL)                | 使用多个背景图像             |
+| background-size  | 像素值\|%                        | 设置背景图片的尺寸           |
+| border-radius    | 像素值\|%                        | 设置盒子的圆角边框（顺时针） |
+| box-shadow       | x位置 y位置  模糊 尺寸 颜色 内外 | 设置盒子的阴影               |
 
 案例：使用盒子阴影制作圆柱体
 
@@ -204,45 +204,9 @@ div:hover {
 | transition-property        | 属性的名称                                         | 设置过渡效果的 CSS 属性的名称 |
 | transition-duration        | s（秒）                                            | 过渡效果需要多少秒或毫秒      |
 | transition-timing-function | linear \| ease \| ease-in  ease-out \| ease-in-out | 过渡效果的速度曲线            |
-| transition-delay           | s（秒）（为0时要带单位，0s）                       | 过渡效果何时开始              |
+| transition-delay           | s（秒）                                            | 过渡效果何时开始              |
 
 案例：鼠标经过改变图片大小
 
-# 动画
+# 动画animation
 
-## 动画规则@keyframes
-
-语法：
-
-```css
-@keyframes 动画名称 {
-    时间轴 {
-        css-styles;
-    }
-}
-```
-
-时间轴：
-
-- 0%-100%，0% 是动画的开始时间，100% 动画的结束时间。
-
-- from（与 0% 相同）
-- to（与 100% 相同）
-
-## 动画属性animation
-
-语法：
-
-```css
-animation: 动画名称 时间 速度曲线 延迟时间 播放次数 反向播放;
-```
-
-| 属性                      | 属性值            | 描述                             |
-| ------------------------- | ----------------- | -------------------------------- |
-| animation-name            |                   | 绑定到选择器的 keyframe 名称。   |
-| animation-duration        | s（秒）           | 动画所花费的时间，以秒或毫秒计。 |
-| animation-timing-function |                   | 动画的速度曲线。                 |
-| animation-delay           | s（秒）           | 动画何时开始。                   |
-| animation-iteration-count | 数值 \| infinite  | 动画播放的次数。                 |
-| animation-direction       | alternate         | 动画是否应该轮流反向播放。       |
-| animation-play-state      | paused \| running | 动画正在运行还是暂停。           |
