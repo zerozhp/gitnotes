@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 处理空白和换行 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+	p {
+		white-space:normal;  /* 默认 合并空白，忽略换行，最大宽度换行*/
+		white-space:nowrap; /* 使用最多 我们经常会是文本不换行 */
+		white-space:pre; /* 保留空白，保留换行，超出宽度不换行 */
+		white-space:pre-line; /* 合并空白，保留换行，最大宽度换行 */
+		white-space:pre-wrap; /* 保留空白，保留换行，最大宽度换行 */
+
+	}
+  </style>
+ </head>
+
+ <body>
+  <p>这是一个段落           这是一个段落
+  这是一个段落
+  这是一个段落
+  这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落
+  
+  </p>
+ </body>
+</html>

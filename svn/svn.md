@@ -199,6 +199,11 @@ svn checkout svn://192.168.0.228/www_160678_com/ . --username=zhangpeng --passwo
 
 ```bash
 svn status #查看文件状态
+# ?表示未版本控制
+?       .user.ini
+?       404.html
+?       index.html
+?       .htaccess
 ```
 
 3.2添加所有文件进入版本库（建议使用第二条命令）
@@ -206,6 +211,11 @@ svn status #查看文件状态
 ```bash
 svn add * --force #添加所有文件，隐藏文件不会提交
 svn add . --no-ignore --force #循环遍历文件夹中所有未添加的文件，添加到版本管理
+# A表示加入版本库
+A         .user.ini
+A         404.html
+A         .htaccess
+A         index.html
 ```
 
 3.3提交至仓库（会提示输入账号密码）

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 后代选择器 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+    h1 { font-size:40px;}
+	p { font-size:24px;}
+	h1 strong { color:#00ff00;} /* 选择h1下的strong元素 */
+	p strong {color:#ff0000;} /* 选择p元素下的strong元素 */
+	body strong { text-decoration:underline;} /* 选择body下的元素strong，以及body子元素h1和p下的strong元素 */
+	/* 
+	1.后代选择器是使用最多的选择器
+	2.后代选择器选择包括子元素和更下一级的元素
+	*/
+  </style>
+ </head>
+
+ <body>
+  <strong>我是body的儿子</strong>
+  <h1><strong>我是body儿子h1的儿子</strong></h1>
+  <p><strong>我是body儿子p的儿子</strong>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+  <p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+  <p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+  <p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+ </body>
+</html>

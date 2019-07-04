@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 后代选择器 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+	.a .b { color:red;}
+	.a>.b { border-top:1px solid #f00;}
+	/* 子元素选择器 只选择元素的子元素 */
+  </style>
+ </head>
+
+ <body>
+	<div class="a">
+		一层
+		<div class="b">
+			二层
+			<div class="b">
+			三层
+			</div>
+		</div>
+	</div>
+	
+	
+ </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 属性选择器 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+	a { color:red;}
+	a[target] {color:blue;}
+	a[target="_blank"] {color:yellow;}
+	a[href="#"] { font-style:italic;}
+  </style>
+ </head>
+
+ <body>
+	<a href="#">默认本窗口打开</a>
+	<br />
+	<a href="#" target="_self">本窗口打开</a>
+	<br />
+	<a href="#" target="_blank">新窗口打开</a>
+	<a href="http://www.baidu.com" >百度</a>
+	<input type="text" />
+ </body>
+</html>

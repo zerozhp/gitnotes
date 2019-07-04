@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 回顾选择器 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+	p { font-size:24px;} /* 标签选择器 */
+	h2 { font-size:14px;}
+	.nan { color:blue;}  /* 类选择器 */
+	.nv { color:pink;}
+	#team-one { text-decoration:underline;} /* ID选择器 */
+	* { font-style:italic;} /* 通配符选择器 */
+	.nan.shadow { text-shadow:5px 5px 8px #888;}/*交集选择器*/
+	.nan,.nv { letter-spacing:1em;}/*选择器分组*/
+	body h1 { text-indent:1em;}/* 后代选择器 */
+	body>h1 { color:#ffff00;}/* 子元素选择器 */
+	a { font-style:normal;}
+	a[target] { color:red;}  /* 属性选择器 */
+	a[target="_blank"] { font-size:24px;}
+  </style>
+ </head>
+
+ <body>
+  <a href="#">链接</a>
+  <a href="#" target="_self">链接</a>
+  <a href="#" target="_blank">链接</a>
+
+  <h1 class="shadow">学习小组</h1>
+  <h2 id="team-one">第一组</h2>
+  <p><b>邹育钦</b></p>
+  <p class="nan shadow">李林杰</p>
+  <p class="nv">谢晶</p>
+  <h2 id="team-two">第二组</h2>
+  <p class="nan">胡舒成</p>
+  <p class="nan">腾建荣</p>
+  <p class="nan">谭李算</p>
+  
+ </body>
+</html>

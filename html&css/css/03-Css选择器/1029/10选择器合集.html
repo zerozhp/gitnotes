@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 选择器合集 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+	* { text-align:center;} /* 通配符选择器 */
+	h1 { font-size:40px;} /* 标签选择器 */
+	p { font-size:18px;} /* 标签选择器 */
+	.blue { color:#00f;} /* 类选择器 */
+	#red { color:#f00;} /* ID选择器 */
+	p.blue { text-decoration:underline;} /* 交集选择器 */
+	.blue,#red { font-weight:600;} /* 并集选择器 */
+	body strong { text-decoration:overline;} /* 后代选择器 */
+	body>strong { font-style:italic;} /* 子元素选择器 */
+	a[target="_self"] { color:#ff0;} /* 属性选择器 */
+  </style>
+ </head>
+
+ <body>
+	<h1 class="blue">标题标题标题标题标题标题标题标题</h1>
+	<strong>我是body的儿子</strong>
+	<p class="blue">段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签</p>
+	<p id="red">段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签</p>
+	<p><strong>我是body的孙子</strong>段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签段落标签</p>
+	<a href="#" target="_self">这个链接不能点</a>
+	<a href="#" target="_self">这个链接不能点</a>
+	<a href="https://www.baidu.com" target="_blank">这个链接不能点</a>
+ </body>
+</html>

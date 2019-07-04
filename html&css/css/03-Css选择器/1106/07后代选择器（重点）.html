@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 后代选择器 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+	ol li { color:red;}
+	/* 通过元素去选择元素下的所有后代元素，通过“空格”隔开*/
+	dd li { font-size:24px;}
+	/* 注意1：选择的是元素所有的后代，不局限于子元素 */
+	.dd li { font-style:italic;}
+	/* 注意2：可以使用标签选择器、类选择器、ID选择器混合 */
+  </style>
+ </head>
+
+ <body>
+	<dl>
+		<dt>目录</dt>
+		<dd class="dd">
+			<ol>
+				<li>第一章</li>
+				<li>第二章</li>
+			</ol>
+			<ul>
+				<li>无序列表</li>
+				<li>无序列表</li>
+			</ul>
+		</dd>
+	</dl>
+	
+ </body>
+</html>

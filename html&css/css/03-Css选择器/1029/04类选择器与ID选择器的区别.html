@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <title> 类选择器与ID选择器的区别 </title>
+  <meta charset="utf-8">
+  <meta name="Keywords" content="关键字">
+  <meta name="Description" content="网页描述">
+  <style type="text/css">
+    h1 { font-size:40px;}
+	p { font-size:24px; color:#ffff00;}
+	.class-name { color:#ff0000;}
+	.sex { font-weight:600;} /* 可以使用多个和多次 */
+	#idname { color:#0000ff;} /* 只能使用一个且只出现一次 */
+	/* 
+	类选择器相当于身份证的姓名，ID选择器相当于身份证号码
+	可以有同名同姓的人，当身份证号码每个人的不相同
+	*/
+
+  </style>
+ </head>
+
+ <body>
+  <h1>标题标题标题标题标题标题</h1>
+  <p class="sex class-name">段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+  <p id="idname">段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+  <p class="sex">段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+  <p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+ </body>
+</html>
