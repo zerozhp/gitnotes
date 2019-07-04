@@ -231,7 +231,7 @@ svn commit -m "<注释>" #提交
 1.进入钩子目录
 
 ```bash
-cd /var/svn/svnrepos/www_160678_com/conf/hooks
+cd /var/svn/svnrepos/www_160678_com/hooks
 ```
 
 2.复制新建钩子文件`post-commit`
